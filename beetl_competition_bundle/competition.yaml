@@ -1,0 +1,33 @@
+title: NeurIPS 2021 BEETL Competition: Benchmarks for EEG Transfer Learning
+description: The Benchmarks for EEG Transfer Learning (BEETL) is a competition that aims to stimulate the development of transfer and meta-learning algorithms applied to a prime example of what makes the use of biosignal data hard, EEG data. BEETL acts as a much-needed benchmark for domain adaptation algorithms in EEG decoding and provides a real-world stimulus goal for transfer learning and meta-learning developments for both academia and industry. Given the multitude of different EEG-based algorithms that exist, we offer two specific challenges: Task 1 is a cross-subject sleep stage decoding challenge reflecting the need for transfer learning in clinical diagnostics, and Task 2 is a cross-dataset motor imagery decoding challenge reflecting the need for transfer learning in human interfacing.
+image: logo.png
+has_registration: True
+html:
+    overview: overview.html
+phases:
+    1:
+        phasenumber: 1
+        label: "leaderboard testing phase"
+        start_date: 2021-07-05
+        max_submissions: 100
+        scoring_program: scoring_program.zip
+        reference_data: reference_data.zip
+    2:
+        phasenumber: 1
+        label: "Final scoring phase"
+        start_date: 2021-09-11
+        max_submissions: 30
+        scoring_program: scoring_program.zip
+        reference_data: reference_data.zip
+
+leaderboard:
+    leaderboards:
+        RESULTS: &RESULTS
+            label: Results
+            rank: 1
+    columns:
+        correct:
+            leaderboard: *RESULTS
+            label: correct
+            rank: 1
+            numeric_format: 1
