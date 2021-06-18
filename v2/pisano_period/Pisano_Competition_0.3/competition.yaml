@@ -1,0 +1,47 @@
+title: CKC Code Challenge - Pisano Period
+image: logo.png
+
+pages:
+  - title: Welcome!
+    file: welcome.md
+
+tasks:
+  - index: 0
+    name: Compute Pisano
+    description: Computing Pisano, tracking character count, memory, cpu usage
+#    reference_data: reference_data.zip
+    ingestion_program: ingestion_program/
+    scoring_program: scoring_program/
+
+solutions:
+  - index: 0
+    tasks:
+    - 0
+    path: solution/
+
+phases:
+  - name: Compute Pisano
+    description: Computing Pisano, tracking character count, memory, cpu usage
+    start: 08-01-2018
+    end: 09-01-2018
+    tasks:
+    - 0
+    solutions:
+    - 0
+
+leaderboards:
+  - title: Pisano Period Leaderboard
+    key: main
+    columns:
+      - title: CPU
+        key: cpu
+        index: 0
+        sorting: desc
+      - title: Mem
+        key: mem
+        index: 1
+        sorting: desc
+      - title: Char count
+        key: char_count
+        index: 2
+        sorting: desc
