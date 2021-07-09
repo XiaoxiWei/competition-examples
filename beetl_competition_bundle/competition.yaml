@@ -13,21 +13,39 @@ phases:
     1:
         color: green
         phasenumber: 1
-        label: "leaderboard testing phase"
+        label: "leaderboard testing phase sleep"
         start_date: 2021-07-05
         max_submissions_per_day: 3
         max_submissions: 100
         scoring_program: scoring_program.zip
-        reference_data: reference_data.zip
+        reference_data: reference_data1.zip
     2:
-        color: purple
+        color: yellow
         phasenumber: 2
-        label: "Final scoring phase"
+        label: "leaderboard testing phase motor imagery"
+        start_date: 2021-07-05
+        max_submissions_per_day: 3
+        max_submissions: 100
+        scoring_program: scoring_program.zip
+        reference_data: reference_data2.zip
+    3:
+        color: purple
+        phasenumber: 3
+        label: "Final scoring phase sleep"
         start_date: 2021-09-11
         max_submissions_per_day: 3
         max_submissions: 30
-        scoring_program: scoring_program2.zip
-        reference_data: reference_data2.zip
+        scoring_program: scoring_program.zip
+        reference_data: reference_data3.zip
+    4:
+        color: blue
+        phasenumber: 4
+        label: "Final scoring phase motor imagery"
+        start_date: 2021-09-11
+        max_submissions_per_day: 4
+        max_submissions: 30
+        scoring_program: scoring_program.zip
+        reference_data: reference_data4.zip
 
 leaderboard:
     leaderboards:
@@ -39,4 +57,4 @@ leaderboard:
             leaderboard: *RESULTS
             label: correct
             rank: 1
-            numeric_format: 1
+            numeric_format: 2
